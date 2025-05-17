@@ -5612,11 +5612,6 @@ class PlayState extends MusicBeatState
 
 		if (FlxG.keys.justPressed.SEVEN)
 		{
-			if(FlxTransitionableState.skipNextTransIn)
-			{
-				Transition.nextCamera = null;
-			}
-			
 			switch (curSong.toLowerCase())
 			{
 				case 'supernovae':
@@ -5758,11 +5753,6 @@ class PlayState extends MusicBeatState
 		#if debug
 		if (FlxG.keys.justPressed.THREE)
 		{
-			if(FlxTransitionableState.skipNextTransIn)
-			{
-				Transition.nextCamera = null;
-			}
-			
 			if(FlxG.save.data.waving){
 				#if SHADERS_ENABLED
 				resetShader();
@@ -6851,10 +6841,6 @@ class PlayState extends MusicBeatState
 
 			if (storyPlaylist.length <= 0)
 			{
-				if(FlxTransitionableState.skipNextTransIn)
-				{
-					Transition.nextCamera = null;
-				}
 				switch (curSong.toLowerCase())
 				{
 					case 'polygonized':
@@ -7047,17 +7033,9 @@ class PlayState extends MusicBeatState
 					if (localFunny == CharacterFunnyEffect.Recurser)
 					{
 						FlxG.switchState(new FunnyTextState(CoolUtil.coolTextFile(Paths.txt('dialogue/recurser-post'))));
-						if(FlxTransitionableState.skipNextTransIn)
-						{
-							Transition.nextCamera = null;
-						}
 						return;
 					}
 					FlxG.switchState(new FreeplayState());
-			}
-			if(FlxTransitionableState.skipNextTransIn)
-			{
-				Transition.nextCamera = null;
 			}
 		}
 	}
