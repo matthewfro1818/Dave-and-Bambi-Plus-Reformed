@@ -35,7 +35,6 @@ haxelib install hxCodec 2.5.1
 haxelib install linc_luajit
 haxelib install hscript
 haxelib install newgrounds
-haxelib install actuate
 haxelib install extension-webm
 haxelib install discord_rpc
 haxelib git flxanimate https://github.com/Dot-Stuff/flxanimate 768740a56b26aa0c072720e0d1236b94afe68e3e
