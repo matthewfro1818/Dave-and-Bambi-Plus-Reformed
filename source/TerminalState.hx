@@ -207,7 +207,6 @@ class TerminalState extends MusicBeatState
                         case "test.bit":
                             UpdatePreviousText(false); //resets the text
                             UpdateText(LanguageManager.getTerminalString("term_loading"));
-                            LoadingState.loadAndSwitchState(new test.flxInvaders.PlayState());
                         case "flandre.dat":
                             UpdatePreviousText(false); //resets the text
                             UpdateText(LanguageManager.getTerminalString("term_loading"));
