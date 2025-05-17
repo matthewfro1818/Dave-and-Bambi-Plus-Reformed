@@ -742,8 +742,6 @@ class PlayState extends MusicBeatState
 
 		FlxCamera.defaultCameras = [camGame];
 
-		Transition.nextCamera = camTransition;
-
 		persistentUpdate = true;
 		persistentDraw = true;
 
@@ -1965,8 +1963,6 @@ class PlayState extends MusicBeatState
 		Paths.clearUnusedMemory();
 
 		perlinCamera = new Perlin(Math.floor(Math.random() * 65535));
-
-		Transition.nextCamera = camTransition;
 	}
 
 	function shakeFromLosing(icon:HealthIcon)
