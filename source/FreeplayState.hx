@@ -446,6 +446,7 @@ class FreeplayState extends MusicBeatState
 					addWeek(['Importumania'], 14, ['importumania']);
 				addWeek(['omission'], 21, ['dan']);
 				addWeek(['Doge-Vs-Bambi'], 22, ['doge']);
+				addWeek(['Enter Gapple Menu'], 2, ['bandu']);
 			case 'cover':
 				addWeek(['Confronting-Yourself'], 4, ['tristan-festival']);
 				addWeek(['Cob', 'Super-Saiyan'], 1, ['dave', 'dave-annoyed']);
@@ -873,6 +874,8 @@ class FreeplayState extends MusicBeatState
 				{
 					case 'Enter Terminal':
 						FlxG.switchState(new TerminalState());
+					case 'Enter Gapple Menu':
+						FlxG.switchState(new Gapple.MainMenuState());
 					default:
 						FlxG.sound.music.fadeOut(1, 0);
 						if (isaCustomSong) {
