@@ -28,7 +28,7 @@ class Webm {
 	}
 	
 	public function decode(data:ByteArray) {
-		var info:Array<Int> = hx_vpx_codec_decode(this.context, data.getData());
+		var info:Array<Int> = hx_vpx_codec_decode(this.context());
 		var width:Int = info[0];
 		var height:Int = info[1];
 		var isKeyFrame:Bool = (info[2] != 0);
