@@ -20,7 +20,6 @@ import lime.utils.Assets;
 import gapple.Discord.DiscordClient;
 #end
 using StringTools;
-import gapple.PlaySongMetadata;
 import gapple.HealthIcon;
 
 
