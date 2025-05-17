@@ -875,7 +875,7 @@ class FreeplayState extends MusicBeatState
 					case 'Enter Terminal':
 						FlxG.switchState(new TerminalState());
 					case 'Enter Gapple Menu':
-						FlxG.switchState(new Gapple.MainMenuState());
+						FlxG.switchState(new gapple.MainMenuState());
 					default:
 						FlxG.sound.music.fadeOut(1, 0);
 						if (isaCustomSong) {
