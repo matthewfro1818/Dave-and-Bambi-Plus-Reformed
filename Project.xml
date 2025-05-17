@@ -84,6 +84,7 @@
 	<assets path="Gappleassets/songs"    library="songs"    exclude="*.mp3" unless="web"/>
 	<assets path="Gappleassets/shared"   library="shared"   exclude="*.ogg" if="web"/>
 	<assets path="Gappleassets/shared"   library="shared"   exclude="*.mp3" unless="web"/>
+	<assets path="Gappleassets/fonts" embed='true'/>
 
 
 	<!-- _______________________________ Libraries ______________________________ -->
