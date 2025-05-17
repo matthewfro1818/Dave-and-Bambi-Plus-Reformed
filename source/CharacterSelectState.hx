@@ -255,8 +255,7 @@ class CharacterSelectState extends MusicBeatState
 		FlxG.cameras.add(camHUD);
 		FlxG.cameras.add(camTransition);
 		FlxCamera.defaultCameras = [camGame];
-		Transition.nextCamera = camTransition;
-		
+
 		FlxG.camera.zoom = 1.2;
 		camHUD.zoom = 0.75;
 
@@ -416,8 +415,6 @@ class CharacterSelectState extends MusicBeatState
 		add(arrowRight);
 
 		super.create();
-
-		Transition.nextCamera = camTransition;
 	}
 
 	private function generateStaticArrows(noteType:String = 'normal', regenerated:Bool):Void
@@ -724,10 +721,6 @@ class CharacterSelectState extends MusicBeatState
 			FlxG.sound.play(Paths.sound('error'), 0.9);
 
 			PlatformUtil.sendFakeMsgBox("Null Object Reference");
-		}
-		if (FlxTransitionableState.skipNextTransIn)
-		{
-			Transition.nextCamera = null;
 		}
 		FlxG.sound.music.stop();
 		LoadingState.loadAndSwitchState(new PlayState());
